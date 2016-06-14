@@ -2,7 +2,9 @@
 
 
 ```sh
-$ npm install
+$ npm i -g cordova
+$ npm i -g ionic
+$ npm i
 $ bower
 ```
 
