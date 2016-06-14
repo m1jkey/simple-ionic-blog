@@ -1,0 +1,68 @@
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Colors
+// -------------------------------
+
+$light:                           #fff !default;
+$stable:                          #eee !default;
+$positive:                        #2196f3 !default;
+$calm:                            #03a9f4 !default;
+$balanced:                        #009688 !default;
+$energized:                       #ffeb3b !default;
+$assertive:                       #f44336 !default;
+$royal:                           #673ab7 !default;
+$dark:                            #333 !default;
+$disable:						  rgba(255,255,255,.7) !default;
+$primary-text-color:			  #f5f5f5 !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+@import "login";
+
+.main-content .pane{ background-color: $positive; }
+.el-center{
+	margin-left: auto;
+	margin-right: auto;
+}
+i.icon{margin-right: 10px;}
+
+.blog-content{
+
+	.article
+	{
+		.article-title{font-size: 1.5rem;}
+		.article-content{
+			margin-top: 10px;
+			text-indent: 1rem;
+			white-space: normal;
+		}
+		.article-date{display: block; margin-top: 10px;}
+		.buttons{
+			cursor: pointer;
+			@include transition(all .25s linear);
+			i.del_article
+			{
+				color: $assertive;
+				font-size: 1.5rem;
+				&:hover{opacity: .7;}
+			}
+		}
+	}
+
+	.blog-empty-msg{color: $disable; margin-top: 40px;}
+}
+
+.button.add-post{
+	position: fixed;
+	right: 16px;
+	bottom: 16px;
+	z-index: 10;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	background-color: $assertive;
+	color: #fff;
+	cursor: pointer;
+}

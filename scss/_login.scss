@@ -1,0 +1,20 @@
+.login {
+	
+	.title{margin-top: 50px; color: $primary-text-color;}
+	.login-form{
+		max-width: 400px;
+		margin-top: 50px;
+
+		label{border:0;}
+		input{
+			text-align: center;
+			&::-webkit-input-placeholder{text-align: center;}
+		}
+		.button.button-positive {
+			margin-top: 20px;
+			background: darken($positive, 20%);
+			&.active,
+			&.activated { background: darken($positive, 10%);}
+		}
+	}
+}

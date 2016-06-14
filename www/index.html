@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Simple Blog</title>
+    <link href="css/app.css" rel="stylesheet">
+  </head>
+  <body ng-app="blogApp">
+
+    <ion-nav-view class="main-content" role="main" ng-controller="BlogCtrl as blog"></ion-nav-view>
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="cordova.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>

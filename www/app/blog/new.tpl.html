@@ -1,0 +1,26 @@
+<!-- Blog Modal -->
+<div class="modal">
+
+  	<ion-header-bar class="bar-secondary">
+    	<h1 class="title">New Blog</h1>
+    	<button class="button button-clear button-positive" ng-click="blog.hideModal('blog')">Cancel</button>
+  	</ion-header-bar>
+
+  	<ion-content>
+
+    	<form ng-submit="blog.addArticle(article)">
+	      	<div class="list">
+	        	<label class="item item-input">
+	          		<input type="text" placeholder="Blog title" ng-model="article.title">
+	        	</label>
+	        	<label class="item item-input">
+	          		<textarea placeholder="Blog content" name="blog-content" id="blog-content" cols="30" rows="10"ng-model="article.body"></textarea>
+	        	</label>
+	      	</div>
+	      	<div class="padding">
+	        	<button type="submit" class="button button-block button-positive">Post</button>
+	      	</div>
+    	</form>
+  	</ion-content>
+
+</div>
