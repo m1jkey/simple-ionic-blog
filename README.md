@@ -24,3 +24,9 @@ on Android
 ```sh
 $ ionic run android
 ```
+
+Login account
+<pre>
+Username : Admin
+Password : 123456
+</pre>
